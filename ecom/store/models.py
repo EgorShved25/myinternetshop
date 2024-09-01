@@ -6,7 +6,7 @@ class Category(models.Model):
     name = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.name
+        return self.name # какая информайция будет выводиться когда мы будем выводить обьект на шаблоны
 
     class Meta:
         verbose_name_plural = 'categories' # изменение имени в админке
